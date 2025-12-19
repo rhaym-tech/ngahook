@@ -1,0 +1,67 @@
+﻿  Building 'ngahook' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  main.cpp
+C:\Users\d\source\repos\ngahook\ngahook\ntos.h(1156,11): error C2220: the following warning is treated as an error
+  (compiling source file 'main.cpp')
+  
+C:\Users\d\source\repos\ngahook\ngahook\ntos.h(1156,11): warning C4273: 'ZwAllocateVirtualMemory': inconsistent dll linkage
+  (compiling source file 'main.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\ntifs.h(31399,1):
+      see previous definition of 'ZwAllocateVirtualMemory'
+  
+C:\Users\d\source\repos\ngahook\ngahook\ntos.h(1164,11): warning C4273: 'ZwFreeVirtualMemory': inconsistent dll linkage
+  (compiling source file 'main.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\ntifs.h(31434,1):
+      see previous definition of 'ZwFreeVirtualMemory'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\vcruntime.h(61,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
+  (compiling source file 'main.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\vcruntime.h(111,9): warning C4005: '_CRT_STRINGIZE': macro redefinition
+  (compiling source file 'main.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(85,9):
+      see previous definition of '_CRT_STRINGIZE'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\vcruntime.h(114,9): warning C4005: '_CRT_WIDE': macro redefinition
+  (compiling source file 'main.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(88,9):
+      see previous definition of '_CRT_WIDE'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\vcruntime.h(155,9): warning C4005: '__CRTDECL': macro redefinition
+  (compiling source file 'main.cpp')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\crt\crtdefs.h(640,9):
+      see previous definition of '__CRTDECL'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\include\stdint.h(16,26): warning C4083: expected ')'; found identifier '_VCRUNTIME_DISABLED_WARNINGS'
+  (compiling source file 'main.cpp')
+  
+C:\Users\d\source\repos\ngahook\ngahook\tools.h(20,19): warning C4456: declaration of 'name' hides previous local declaration
+  (compiling source file 'main.cpp')
+      C:\Users\d\source\repos\ngahook\ngahook\tools.h(13,15):
+      see declaration of 'name'
+  
+C:\Users\d\source\repos\ngahook\ngahook\memory.h(18,47): warning C4244: 'argument': conversion from 'unsigned __int64' to 'ULONG', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\d\source\repos\ngahook\ngahook\memory.h(23,11): warning C4245: 'return': conversion from 'NTSTATUS' to 'unsigned __int64', signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Users\d\source\repos\ngahook\ngahook\memory.h(33,11): warning C4245: 'return': conversion from 'NTSTATUS' to 'unsigned __int64', signed/unsigned mismatch
+  (compiling source file 'main.cpp')
+  
+C:\Users\d\source\repos\ngahook\ngahook\paging.h(90,22): warning C4189: 'page': local variable is initialized but not referenced
+  (compiling source file 'main.cpp')
+  
+C:\Users\d\source\repos\ngahook\ngahook\paging.h(214,21): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'NTSTATUS', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\d\source\repos\ngahook\ngahook\cheat.h(15,14): warning C4834: discarding return value of function with [[nodiscard]] attribute
+  (compiling source file 'main.cpp')
+  
+C:\Users\d\source\repos\ngahook\ngahook\cheat.h(55,14): warning C4834: discarding return value of function with [[nodiscard]] attribute
+  (compiling source file 'main.cpp')
+  
+C:\Users\d\source\repos\ngahook\ngahook\comms.h(7,16): warning C4091: 'typedef ': ignored on left of 'cmd_t' when no variable is declared
+  (compiling source file 'main.cpp')
+  
+C:\Users\d\source\repos\ngahook\ngahook\main.cpp(3,73): warning C4100: 'reg_path': unreferenced parameter
+C:\Users\d\source\repos\ngahook\ngahook\main.cpp(3,48): warning C4100: 'drv_obj': unreferenced parameter
