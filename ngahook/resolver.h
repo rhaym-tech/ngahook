@@ -63,6 +63,7 @@ namespace resolver
 		func_ptrs.RtlEqualUnicodeString = (RtlEqualUnicodeString_t)get_system_routine(skCrypt("RtlEqualUnicodeString"));
 		func_ptrs.PsGetProcessSectionBaseAddress = (PsGetProcessSectionBaseAddress_t)get_system_routine(skCrypt("PsGetProcessSectionBaseAddress"));
 		func_ptrs.MmGetPhysicalMemoryRanges = (MmGetPhysicalMemoryRanges_t)get_system_routine(skCrypt("MmGetPhysicalMemoryRanges"));
+		func_ptrs.ExFreePool = (ExFreePool_t)get_system_routine(skCrypt("ExFreePool"));
 		func_ptrs.ExFreePoolWithTag = (ExFreePoolWithTag_t)get_system_routine(skCrypt("ExFreePoolWithTag"));
 		func_ptrs.MmMapIoSpace = (MmMapIoSpace_t)get_system_routine(skCrypt("MmMapIoSpace"));
 		func_ptrs.MmMapIoSpaceEx = (MmMapIoSpaceEx_t)get_system_routine(skCrypt("MmMapIoSpaceEx"));

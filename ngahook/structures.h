@@ -144,6 +144,7 @@ typedef VOID(*IoFreeMdl_t)(PMDL Mdl);
 typedef BOOLEAN(*RtlEqualUnicodeString_t)(PUNICODE_STRING String1, PUNICODE_STRING String2, BOOLEAN CaseInSensitive);
 typedef PVOID(*PsGetProcessSectionBaseAddress_t)(PEPROCESS Process);
 typedef PPHYSICAL_MEMORY_RANGE(*MmGetPhysicalMemoryRanges_t)(VOID);
+typedef VOID(*ExFreePool_t)(PVOID P);
 typedef VOID(*ExFreePoolWithTag_t)(PVOID P, ULONG Tag);
 typedef PVOID(*MmMapIoSpace_t)(PHYSICAL_ADDRESS PhysicalAddress, SIZE_T NumberOfBytes, MEMORY_CACHING_TYPE CacheType);
 typedef PVOID(*MmMapIoSpaceEx_t)(PHYSICAL_ADDRESS PhysicalAddress, SIZE_T NumberOfBytes, ULONG Protect);
@@ -218,6 +219,7 @@ struct {
     RtlEqualUnicodeString_t RtlEqualUnicodeString;
     PsGetProcessSectionBaseAddress_t PsGetProcessSectionBaseAddress;
     MmGetPhysicalMemoryRanges_t MmGetPhysicalMemoryRanges;
+    ExFreePool_t ExFreePool;
     ExFreePoolWithTag_t ExFreePoolWithTag;
     MmMapIoSpace_t MmMapIoSpace;
     MmMapIoSpaceEx_t MmMapIoSpaceEx;
