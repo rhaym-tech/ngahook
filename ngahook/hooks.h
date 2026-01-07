@@ -29,6 +29,11 @@ namespace hooks
 		func_ptrs.MmProtectMdlSystemAddress(mdl, PAGE_EXECUTE_READWRITE);
 		 
 		void* mapped = func_ptrs.MmMapLockedPagesSpecifyCache(mdl, KernelMode, MmNonCached, 0, false, NormalPagePriority);
+		if (!mapped) { // if you don't handle ts you get bsod
+			func_ptrs.MmUnlockPages(mdl);
+			func_ptrs.IoFreeMdl(mdl);
+			return false;
+		}
 
 		InterlockedExchangePointer((void**)mapped, hook_handler);
 		func_ptrs.MmUnmapLockedPages(mapped, mdl);
